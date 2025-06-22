@@ -1,0 +1,13 @@
+{
+  "description": "Enfocado en ramas cortas para desarrollo, sin demasiados metadatos.",
+  "order": [
+    "description",
+    "user"
+  ],
+  "questions": {
+    "description": "Describe brevemente la tarea o funcionalidad (usa snake_case):",
+    "user": "Ingresa tu identificador o nombre de usuario (ej: jdoe):"
+  },
+  "pattern": "feature/[description]_[user]",
+  "standard-branch-name": "compact-dev"
+}
