@@ -6,7 +6,8 @@ import {
 	Settings,
 	Star,
 	Users,
-	Zap
+	Zap,
+	Computer,
 } from 'lucide-react';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -14,8 +15,6 @@ import { Badge } from '../componentes/ui/badge';
 import { Button } from '../componentes/ui/button';
 import { Card, CardContent } from '../componentes/ui/card';
 import { getPackageInfo } from '../lib/getPackageInfo';
-
-
 
 export default function BranchizenLanding() {
 	const [dataPackage, setDataPackage] = useState({
@@ -107,14 +106,20 @@ export default function BranchizenLanding() {
 							<Download className="w-4 h-4 mr-2" />
 							Instalación Rápida
 						</Button>
-						{/* <Button
-							size="lg"
-							variant="outline"
-							className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600 transition-all"
+						<a
+							href="https://www.npmjs.com/package/branchizen"
+							target="_blank"
+							rel="noreferrer nofollow"
 						>
-							<BookOpen className="w-4 h-4 mr-2" />
-							Documentación
-						</Button> */}
+							<Button
+								size="lg"
+								variant="outline"
+								className="bg-transparent border-white text-white hover:bg-white hover:text-blue-600 transition-all"
+							>
+								<Computer className="w-4 h-4 mr-2" />
+								NPM
+							</Button>
+						</a>
 						<a
 							href="https://github.com/Anderrc/Brachizen"
 							target="_blank"
@@ -166,7 +171,7 @@ export default function BranchizenLanding() {
 								x2="50"
 								y2="350"
 								stroke="white"
-								strokeWidth="3"
+								strokeWidth="6"
 							/>
 
 							{/* Feature branches with labels */}
@@ -175,8 +180,8 @@ export default function BranchizenLanding() {
 								y1="100"
 								x2="150"
 								y2="120"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 							<line
 								x1="150"
@@ -184,15 +189,15 @@ export default function BranchizenLanding() {
 								x2="150"
 								y2="180"
 								stroke="white"
-								strokeWidth="2"
+								strokeWidth="5"
 							/>
 							<line
 								x1="150"
 								y1="180"
 								x2="50"
 								y2="200"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 
 							<line
@@ -200,8 +205,8 @@ export default function BranchizenLanding() {
 								y1="150"
 								x2="200"
 								y2="170"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 							<line
 								x1="200"
@@ -209,15 +214,15 @@ export default function BranchizenLanding() {
 								x2="200"
 								y2="230"
 								stroke="white"
-								strokeWidth="2"
+								strokeWidth="5"
 							/>
 							<line
 								x1="200"
 								y1="230"
 								x2="50"
 								y2="250"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 
 							<line
@@ -225,8 +230,8 @@ export default function BranchizenLanding() {
 								y1="280"
 								x2="120"
 								y2="300"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 							<line
 								x1="120"
@@ -234,59 +239,59 @@ export default function BranchizenLanding() {
 								x2="120"
 								y2="340"
 								stroke="white"
-								strokeWidth="2"
+								strokeWidth="5"
 							/>
 							<line
 								x1="120"
 								y1="340"
 								x2="50"
 								y2="350"
-								stroke="white"
-								strokeWidth="2"
+								stroke="black"
+								strokeWidth="3"
 							/>
 
 							{/* Commit dots */}
-							<circle cx="50" cy="50" r="4" fill="white" />
-							<circle cx="50" cy="100" r="4" fill="white" />
-							<circle cx="150" cy="120" r="4" fill="white" />
-							<circle cx="150" cy="150" r="4" fill="white" />
-							<circle cx="150" cy="180" r="4" fill="white" />
-							<circle cx="50" cy="150" r="4" fill="white" />
-							<circle cx="200" cy="170" r="4" fill="white" />
-							<circle cx="200" cy="200" r="4" fill="white" />
-							<circle cx="200" cy="230" r="4" fill="white" />
-							<circle cx="50" cy="200" r="4" fill="white" />
-							<circle cx="50" cy="250" r="4" fill="white" />
-							<circle cx="50" cy="280" r="4" fill="white" />
-							<circle cx="120" cy="300" r="4" fill="white" />
-							<circle cx="120" cy="320" r="4" fill="white" />
-							<circle cx="120" cy="340" r="4" fill="white" />
-							<circle cx="50" cy="350" r="4" fill="white" />
+							<circle cx="50" cy="50" r="5" fill="white" />
+							<circle cx="50" cy="100" r="5" fill="white" />
+							<circle cx="150" cy="120" r="5" fill="white" />
+							<circle cx="150" cy="150" r="5" fill="white" />
+							<circle cx="150" cy="180" r="5" fill="white" />
+							<circle cx="50" cy="150" r="5" fill="white" />
+							<circle cx="200" cy="170" r="5" fill="white" />
+							<circle cx="200" cy="200" r="5" fill="white" />
+							<circle cx="200" cy="230" r="5" fill="white" />
+							<circle cx="50" cy="200" r="5" fill="white" />
+							<circle cx="50" cy="250" r="5" fill="white" />
+							<circle cx="50" cy="280" r="5" fill="white" />
+							<circle cx="120" cy="300" r="5" fill="white" />
+							<circle cx="120" cy="320" r="5" fill="white" />
+							<circle cx="120" cy="340" r="5" fill="white" />
+							<circle cx="50" cy="350" r="5" fill="white" />
 
 							{/* Branch labels */}
 							<text
 								x="160"
-								y="140"
+								y="125"
 								fill="white"
-								fontSize="10"
+								fontSize="14"
 								className="font-mono"
 							>
 								feature/1234_fix_login_jdoe
 							</text>
 							<text
 								x="210"
-								y="190"
+								y="175"
 								fill="white"
-								fontSize="10"
+								fontSize="14"
 								className="font-mono"
 							>
 								bugfix/5678_auth_error_acastano
 							</text>
 							<text
 								x="130"
-								y="320"
+								y="305"
 								fill="white"
-								fontSize="10"
+								fontSize="14"
 								className="font-mono"
 							>
 								hotfix/urgent_fix_team
@@ -374,7 +379,7 @@ export default function BranchizenLanding() {
 							</Button>
 						</div>
 						<div className="space-y-2">
-							<div>
+							<div className="bg-gray-700 rounded-lg p-4 font-mono text-white  overflow-hidden">
 								<span className="text-green-400">$</span> npm
 								install -g branchizen
 							</div>
@@ -401,12 +406,41 @@ export default function BranchizenLanding() {
 							</Button>
 						</div>
 						<div className="space-y-2">
-							<div>
-								<span className="text-green-400">$</span> npx
-								branchizen config
-							</div>
 							<div className="text-gray-300 text-sm">
-								# Configura el orden de campos interactivos
+								<div className="bg-gray-700 rounded-lg p-4 font-mono text-white  overflow-hidden">
+									<div>
+										<span className="text-green-400">
+											$
+										</span>{' '}
+										npx branchizen config
+									</div>
+									<pre className="overflow-ellipsis">
+										{`
+    ______                      _     _               
+    | ___ \\                    | |   (_)              
+    | |_/ /_ __ __ _ _ __   ___| |__  _ _______ _ __  
+    | ___ \\ '__/ _\` | '_ \\ / __| '_ \\| |_  / _ \\ '_ \\ 
+    | |_/ / | | (_| | | | | (__| | | | |/ /  __/ | | |
+    \\____/|_|  \\__,_|_| |_|\\___|_| |_|_/___\\___|_| |_|
+
+		:: Branchizen :: v${dataPackage.version}
+		by Anderson Castaño
+
+		        
+? Desea cambiar la configuración? (Y/n) y
+
+❯ compact-dev - Enfocado en ramas cortas para desarrollo, sin demasiados metadatos...
+  detailed-tracking - Pensado para flujos donde se requiere trazabilidad completa d...
+  release-heavy - Ramas orientadas a releases, incluye versión y fecha de desplieg...
+  ticket-centric - Ramas centradas en el identificador del ticket (ideal para integ...
+  squad-structured - Ideal para equipos grandes: incluye célula, propósito, autor...
+
+  ✅ Configuración guardada en compact-dev
+
+  ✅ Puedes hacer cambios a tu gusto en el archivo ./.branchizenrc.json
+    `}
+									</pre>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -430,27 +464,29 @@ export default function BranchizenLanding() {
 							</Button>
 						</div>
 						<div className="space-y-2">
-							<div>
-								<span className="text-green-400">$</span> npx
-								branchizen
-							</div>
-							<div className="text-blue-300">
-								✔ ¿Qué tipo de rama quieres crear? › feature
-							</div>
-							<div className="text-blue-300">
-								✔ Descripción (en snake_case): ›
-								add_login_screen
-							</div>
-							<div className="text-blue-300">
-								✔ Tu nombre de usuario: › jdoe
-							</div>
-							<div className="text-yellow-300">
-								<br />✅ Nombre de rama sugerido:
-								<br />
-								feature/add_login_screen_jdoe
-							</div>
-							<div className="text-blue-300">
-								✔ ¿Deseas crear esta rama con Git? › (Y/n)
+							<div className="bg-gray-700 rounded-lg p-4 font-mono text-white  overflow-hidden">
+								<div>
+									<span className="text-green-400">$</span>{' '}
+									npx branchizen
+								</div>
+								<div className="text-blue-300">
+									✔ ¿Qué tipo de rama quieres crear? › feature
+								</div>
+								<div className="text-blue-300">
+									✔ Descripción (en snake_case): ›
+									add_login_screen
+								</div>
+								<div className="text-blue-300">
+									✔ Tu nombre de usuario: › jdoe
+								</div>
+								<div className="text-yellow-300">
+									<br />✅ Nombre de rama sugerido:
+									<br />
+									feature/add_login_screen_jdoe
+								</div>
+								<div className="text-blue-300">
+									✔ ¿Deseas crear esta rama con Git? › (Y/n)
+								</div>
 							</div>
 						</div>
 					</div>
@@ -474,26 +510,40 @@ export default function BranchizenLanding() {
 								className="text-white hover:bg-white/20"
 								onClick={() =>
 									navigator.clipboard.writeText(`{
-  "order": ["ticket", "description", "user"],
+  "description": "Enfocado en ramas cortas para desarrollo, sin demasiados metadatos.",
+  "order": [
+    "description",
+    "user",
+    "prefix"
+  ],
   "questions": {
-    "ticket": "ID del ticket:",
-    "description": "Descripción (en snake_case):",
-    "user": "Tu nombre de usuario:"
-  }
+    "description": "Describe brevemente la tarea o funcionalidad (usa snake_case):",
+    "user": "Ingresa tu identificador o nombre de usuario (ej: jdoe):",
+    "prefix": "Prefijo del módulo, componente o área (ej: FE, BE, API):"
+  },
+  "pattern": "feature/[prefix]_[description]_[user]",
+  "standard-branch-name": "compact-dev"
 }`)
 								}
 							>
 								Copiar
 							</Button>
 						</div>
-						<pre className="text-sm">
+						<pre className="text-sm bg-gray-700 rounded-lg p-4 font-mono text-white  overflow-hidden">
 							{`{
-  "order": ["ticket", "description", "user"],
+  "description": "Enfocado en ramas cortas para desarrollo, sin demasiados metadatos.",
+  "order": [
+    "description",
+    "user",
+    "prefix"
+  ],
   "questions": {
-    "ticket": "ID del ticket:",
-    "description": "Descripción (en snake_case):",
-    "user": "Tu nombre de usuario:"
-  }
+    "description": "Describe brevemente la tarea o funcionalidad (usa snake_case):",
+    "user": "Ingresa tu identificador o nombre de usuario (ej: jdoe):",
+    "prefix": "Prefijo del módulo, componente o área (ej: FE, BE, API):"
+  },
+  "pattern": "feature/[prefix]_[description]_[user]",
+  "standard-branch-name": "compact-dev"
 }`}
 						</pre>
 					</div>
@@ -504,6 +554,11 @@ export default function BranchizenLanding() {
 						y definiendo sus preguntas en{' '}
 						<code className="bg-white/20 px-1 rounded">
 							questions
+						</code>
+						. También puedes personalizar el patrón final de la rama
+						con el campo{' '}
+						<code className="bg-white/20 px-1 rounded">
+							pattern
 						</code>
 						.
 					</p>
